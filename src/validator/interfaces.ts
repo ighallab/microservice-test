@@ -1,6 +1,6 @@
 interface ValidationError {
     message: string;
-    type: string;
+    type?: string;
 }
 
 interface JoiError {

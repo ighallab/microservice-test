@@ -26,16 +26,14 @@ const requestValidator: any = (path: string, useJoiError = true): any => {
                 status: "failed",
                 error: {
                     original: error._original,
-                    details: error.details.map(({ message, type }: ValidationError): ValidationError => ({
-                        message: message.replace(/['"]/g, ""),
-                        type,
+                    details: error.details.map(({ message }: ValidationError): ValidationError => ({
+                        message: message.replace(/['"]/g, "")
                     })),
                 },
             };
             return res.status(422).json(useJoiError ? joiError : customError);
         }
 
-        // validation successful
         req.body = value;
         return next();
     };
