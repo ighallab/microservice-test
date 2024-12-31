@@ -34,7 +34,6 @@ RUN npm install --production
 
 # Copy the built application code (from the build stage)
 COPY --from=build /usr/src/app/dist ./dist
-COPY --from=build /usr/src/app/config ./config  # Ensure config directory is copied
 
 # Expose the port your app listens on (4444 in this case)
 EXPOSE 4444

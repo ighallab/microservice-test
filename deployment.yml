@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: microservice-test
-        image: <your-dockerhub-username>/microservice-test:latest
+        image: 192.168.42.17:8443/microservice-test:latest
         ports:
         - containerPort: 4444
         env:
