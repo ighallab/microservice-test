@@ -4,11 +4,11 @@ import {injectable} from "inversify";
 
 @injectable()
 class JwtService {
-    private secretKey: string;
+    private secretKey: string = config.get('secretKey') || 'sampleKey';
     private defaultExpiry: string;
 
+
     constructor() {
-        this.secretKey = config.get('secretKey') || 'sampleKey';
         this.defaultExpiry = '1h';
     }
 
