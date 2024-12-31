@@ -5,7 +5,7 @@ import {routes} from "./routes/routes";
 import config from "config";
 
 const app: Application = express();
-const configurations: any = config.get("server");
+// const configurations: any = config.get("server");
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 
@@ -25,8 +25,7 @@ app.use(cors());
 * */
 app.use('/api',routes);
 
-app.listen(configurations.port,()=>{
+app.listen(4444,()=>{
     console.log(
-        `Server running on URL : 
-        ${configurations.protocol}://${configurations.url} and PORT: ${configurations.port}`);
+        `Server running on URL : http://localhost:4444`);
 });
