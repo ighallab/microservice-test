@@ -4,7 +4,7 @@ import {injectable} from "inversify";
 
 @injectable()
 class JwtService {
-    private secretKey: string = config.get('secretKey') || 'sampleKey';
+    private secretKey: string ='sampleKey';
     private defaultExpiry: string;
 
 
