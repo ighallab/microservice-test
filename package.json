@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --config nodemon.json src/server.ts",
     "build": "tsc",
-    "start": "ts-node src/server.ts"
+    "start": "tsc && node dist/src/server.js"
   },
   "keywords": [],
   "author": "",

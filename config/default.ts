@@ -1,8 +1,8 @@
 const config = {
     server: {
         url: '127.0.0.1',
-        protocol: 'http',
-        port: '3000',
+        protocol: 'https',
+        port: '4444',
     },
     db: {
         host: 'localhost',

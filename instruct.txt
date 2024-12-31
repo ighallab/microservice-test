@@ -1,0 +1,12 @@
+
+know the cluster ip:
+oc whoami --show-server
+Build and Push Docker Image:
+docker build -t <your-dockerhub-username>/microservice-test .
+docker push <your-dockerhub-username>/microservice-test
+
+
+Apply Kubernetes YAMLs:
+oc apply -f deployment.yaml
+oc apply -f service.yaml
+

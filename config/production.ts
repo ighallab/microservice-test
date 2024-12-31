@@ -2,16 +2,18 @@ const config = {
     server: {
         url: 'localhost',
         protocol: 'https',
-        port: '8080',
+        port: '4444',
     },
     db: {
         host: 'localhost',
-        port: 333,
+        port: 3306,
         user: 'root',
-        pass: 's1mpl3',
+        pass: 'toor',
     },
-    externalSecurity: {
-    }
+    externalInfo: {
+        wsdl1URL: 'http://www.dneonline.com/calculator.asmx?WSDL'
+    },
+    secretKey:"qwer*&^%asdf!@#$S!!saAACA"
 };
 
 export default config;
