@@ -19,6 +19,9 @@ RUN npm run build
 # Stage 2: Create a smaller production image from node:16-slim
 FROM node:16-slim
 
+# Set the NODE_ENV to production
+ENV NODE_ENV=production
+
 # Set the working directory in the production image
 WORKDIR /usr/src/app
 
