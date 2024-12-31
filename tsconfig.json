@@ -10,6 +10,6 @@
     "emitDecoratorMetadata": true,
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts","config/**/*.ts"],
+  "include": ["src/**/*.ts","config/**/*"],
   "exclude": ["node_modules"]
 }

@@ -6,6 +6,8 @@ import config from "config";
 
 const app: Application = express();
 const configurations: any = config.get("server");
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 
 
 /*
